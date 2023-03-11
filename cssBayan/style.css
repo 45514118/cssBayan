@@ -1,0 +1,28 @@
+.accordion-container {
+    max-width: 50vh;
+    margin: 0 auto;
+}
+.tab-checker {
+visibility: hidden;
+}
+.tab-header {
+    display: block;
+    cursor: pointer;
+    border: 1px #000 dotted;
+    background-color: aqua;
+}
+.tab-container {
+    height: 0;
+    overflow: hidden;
+}
+.tab-checker:checked + .tab-header + .tab-container {
+    display: block;
+    height: 50px;
+    background-color: aquamarine;
+}
+.tab-header:hover+.tab-container {
+    display: block;
+    height: 50px;
+    background-color: aquamarine;
+}
+
