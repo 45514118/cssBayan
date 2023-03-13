@@ -1,7 +1,8 @@
 body {
     font-size: 1em;
     margin: 0;
-    background: url(./images/bg.jpg) center/cover no-repeat fixed
+    background: url(./images/bg.jpg) center/cover no-repeat fixed;
+    color: white;
 }
 .container {
     padding: 1rem;
@@ -9,9 +10,8 @@ body {
     margin: 0 auto;
 }
 .accordion-header {
-    border: 1px solid aqua;
     border-radius: .5em .5em 0 0;
-    background-color: aqua;
+    background-color: #607d8b;
     max-width: max-content;
     padding: .5em 1em;
 }
@@ -24,8 +24,8 @@ body {
     overflow: hidden;
 }
 .accordion-container:hover .tab-icon {
-    width: 1.2em;
-    height: 1.2em;
+    width: 1em;
+    height: 1em;
 }
 .tab-checker {
     position: absolute;
@@ -43,7 +43,7 @@ body {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    background-color: aqua;
+    background-color: #607d8b;
     padding: 0.5em 1em;
 }
 .tab-icon {
@@ -51,6 +51,7 @@ body {
     width: 0;
     height: 0;
     background: url('./images/emoji-smile-fill.svg') center/cover;
+    fill: white;
 }
 .tab-header:hover > .tab-icon, .tab-checker:checked + .tab-header > .tab-icon {
     background: url('./images/emoji-dizzy-fill.svg') center/cover;
@@ -75,7 +76,7 @@ body {
 .tab-header + .tab-container:hover {
     display: block;
     height: 50px;
-    background-color: aquamarine;
+    background-color: #b0bec5;
     height: 100%;
 }
 
